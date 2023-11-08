@@ -99,7 +99,7 @@ public class ExcelFileReaderService {
         HttpEntity<List<ProjectParticipant>> requestEntity = new HttpEntity<>(projectParticipantList, headers);
         logger.info("Make Rest API call....!!!");
 
-        ResponseEntity<String> response = restTemplate.postForEntity(AppConstants.API_URL, requestEntity, String.class);
+        ResponseEntity<String> response = restTemplate.postForEntity(AppConstants.API_URL+AppConstants.API_END_POINT, requestEntity, String.class);
         if (response.getStatusCode().is2xxSuccessful()) {
             logger.info("Request was successful");
         } else {

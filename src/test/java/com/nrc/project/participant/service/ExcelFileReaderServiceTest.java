@@ -81,7 +81,7 @@ public class ExcelFileReaderServiceTest {
 
         assertEquals(expectedResponse.getBody(), response.getBody());
         assertEquals(expectedResponse.getStatusCode(), response.getStatusCode());
-        verify(restTemplateMock).postForEntity(eq(AppConstants.API_URL), eq(requestEntity), eq(String.class));
+        verify(restTemplateMock).postForEntity(eq(AppConstants.API_URL+AppConstants.API_END_POINT), eq(requestEntity), eq(String.class));
 
     }
 
