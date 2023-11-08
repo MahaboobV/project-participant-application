@@ -20,7 +20,6 @@
 
     <dependencies>
         <dependency>
-            <!-- Spring Boot Starter Dependencies -->
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
@@ -57,7 +56,6 @@
 
     <build>
         <plugins>
-            <!-- Maven Compiler Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -66,18 +64,6 @@
                     <target>${java.version}</target>
                 </configuration>
             </plugin>
-           <!-- <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>3.2.2</version>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <mainClass>com.nrc.project.participant.ProjectParticipantApplication</mainClass>
-                        </manifest>
-                    </archive>
-                </configuration>
-            </plugin>-->
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
                 <version>3.3.0</version> <!-- Adjust the version as needed -->
@@ -102,6 +88,4 @@
             </plugin>
         </plugins>
     </build>
-
-
 </project>
