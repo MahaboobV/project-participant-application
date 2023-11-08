@@ -1,0 +1,16 @@
+logs/
+/log
+.checkstyle
+.classpath
+.idea/
+.project
+.settings
+*~
+*.iml
+*.iws
+ 
+# Maven
+target
+release.properties
+*.releaseBackup
+*.versionsBackup
